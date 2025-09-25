@@ -72,11 +72,22 @@
                     </div>
                     
                     <div class="md:w-1/2 flex justify-center">
-                        <div class="w-full max-w-[280px] bg-gray-800 rounded-3xl p-3 shadow-2xl">
-                            <video class="w-full rounded-2xl" autoplay loop muted playsinline>
-                                <source src="src/videos/v4_sekretarin.mp4" type="video/mp4">
-                                Seu navegador não suporta o vídeo.
-                            </video>
+                        <div class="relative w-full max-w-[280px]">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl">
+                                <video id="hero-video" class="w-full rounded-2xl" autoplay loop muted playsinline>
+                                    <source src="src/videos/v4_sekretarin.mp4" type="video/mp4">
+                                    Seu navegador não suporta o vídeo.
+                                </video>
+                            </div>
+                            <button id="sound-toggle" class="absolute bottom-6 right-6 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center focus:outline-none z-10 transition-all-smooth hover:bg-opacity-75">
+                                <svg id="icon-muted" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                </svg>
+                                <svg id="icon-unmuted" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8a5 5 0 015 5m-1.414-1.414A2 2 0 0117 10.5V11a2 2 0 01-2 2h-1a2 2 0 01-2-2v-1.5a2 2 0 011.586-1.914l-1.172-1.172a2 2 0 012.828 0zM4 11.5a2.5 2.5 0 015 0v1a2.5 2.5 0 01-5 0v-1z" />
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.5 5.5a2.5 2.5 0 010 5" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -91,30 +102,22 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center hover:-translate-y-2 transition-all-smooth">
-                        <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
+                        <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
                         <h3 class="text-xl font-bold mb-2">Atendimento 24/7</h3>
                         <p class="text-gray-600">Sua empresa respondendo clientes e agendando horários até mesmo de madrugada.</p>
                     </div>
                     <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center hover:-translate-y-2 transition-all-smooth">
-                        <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
+                        <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
                         <h3 class="text-xl font-bold mb-2">Agendamento Simplificado</h3>
                         <p class="text-gray-600">A IA gerencia sua agenda, evita conflitos de horário e envia lembretes automaticamente.</p>
                     </div>
                     <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center hover:-translate-y-2 transition-all-smooth">
-                         <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.293 2.293a1 1 0 01-1.414 1.414L10 6.414l-2.293 2.293a1 1 0 01-1.414-1.414L10 3.586zM19 17v4m-2-2h4m-5-16l2.293 2.293a1 1 0 01-1.414 1.414L14 6.414l-2.293 2.293a1 1 0 01-1.414-1.414L14 3.586z"></path></svg>
-                        </div>
+                         <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.293 2.293a1 1 0 01-1.414 1.414L10 6.414l-2.293 2.293a1 1 0 01-1.414-1.414L10 3.586zM19 17v4m-2-2h4m-5-16l2.293 2.293a1 1 0 01-1.414 1.414L14 6.414l-2.293 2.293a1 1 0 01-1.414-1.414L14 3.586z"></path></svg></div>
                         <h3 class="text-xl font-bold mb-2">Mais Tempo para Você</h3>
                         <p class="text-gray-600">Pare de se preocupar com o celular e foque no que realmente importa: seu serviço de excelência.</p>
                     </div>
                     <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center hover:-translate-y-2 transition-all-smooth">
-                        <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                        </div>
+                        <div class="bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg></div>
                         <h3 class="text-xl font-bold mb-2">Experiência Profissional</h3>
                         <p class="text-gray-600">Seu cliente percebe uma organização e profissionalismo de alto nível desde o primeiro contato.</p>
                     </div>
@@ -135,6 +138,7 @@
                 </div>
             </div>
         </section>
+
         <section id="depoimentos" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold text-gray-800">Quem usa, aprova</h2><p class="text-gray-600 mt-2">A satisfação dos nossos clientes é o nosso maior objetivo.</p></div>
@@ -144,6 +148,7 @@
                 </div>
             </div>
         </section>
+
         <section class="bg-brand-blue text-white">
             <div class="container mx-auto px-6 py-20 text-center">
                  <h2 class="text-3xl md:text-4xl font-extrabold">Pronto para simplificar seu tempo?</h2>
@@ -170,8 +175,26 @@
     </a>
 
     <script>
+        // Script para o menu mobile
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Script para o botão de som do vídeo
+        const video = document.getElementById('hero-video');
+        const soundButton = document.getElementById('sound-toggle');
+        const iconMuted = document.getElementById('icon-muted');
+        const iconUnmuted = document.getElementById('icon-unmuted');
+
+        soundButton.addEventListener('click', () => {
+            video.muted = !video.muted;
+            if (video.muted) {
+                iconMuted.classList.remove('hidden');
+                iconUnmuted.classList.add('hidden');
+            } else {
+                iconMuted.classList.add('hidden');
+                iconUnmuted.classList.remove('hidden');
+            }
         });
     </script>
 </body>
